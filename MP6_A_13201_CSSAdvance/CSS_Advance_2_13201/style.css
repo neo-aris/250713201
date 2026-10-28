@@ -1,0 +1,113 @@
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #EBF2F6; 
+  color: #0F1D36;            
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0F1D36;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2A6F87;           
+  margin-top: 32px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #539EAB; 
+  padding-bottom: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse !important;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(15, 29, 54, 0.08);
+  margin-bottom: 20px;
+  border: 1px solid #539EAB !important;
+}
+
+td {
+  padding: 14px 16px !important;
+  border-bottom: 1px solid #EBF2F6 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+td:first-child {
+  width: 28%;
+  color: #2A6F87;
+  font-weight: 500;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  font-size: 14px;
+  color: #0F1D36;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2A6F87;
+  box-shadow: 0 0 0 3px rgba(42, 111, 135, 0.15);
+  background-color: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #2A6F87;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: -2px;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+  margin-right: 16px;
+  font-weight: 400;
+}
+
+input[type="submit"] {
+  background-color: #0F1D36; /* Navy gelap elegan */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #2A6F87; 
+}
+
+input[type="submit"]:active {
+  transform: scale(0.99);
+}

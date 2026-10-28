@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pendaftaran Mahasiswa Baru</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="kartu">
+
+        <div class="kepala">
+            <h1>Pendaftaran Data Mahasiswa</h1>
+            <p>Lengkapi seluruh isian di bawah ini, lalu tekan tombol kirim.</p>
+        </div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <table>
+
+                <tr>
+                    <td>
+                        <label for="nama_lengkap"><strong>Nama Lengkap</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nama_lengkap" name="nama_lengkap" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Gender</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="pria" name="gender" value="Pria" /><label for="pria" class="opsi">Pria</label>
+                        <input type="radio" id="wanita" name="gender" value="Wanita" /><label for="wanita" class="opsi">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="program_studi"><strong>Program Studi</strong></label>
+                    </td>
+                    <td>
+                        <select id="program_studi" name="program_studi">
+                            <option>Teknik Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email_aktif"><strong>Email Aktif</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="email_aktif" name="email_aktif" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="no_hp"><strong>No. HP / Telepon</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="no_hp" name="no_hp" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kata_sandi"><strong>Kata Sandi</strong></label>
+                    </td>
+                    <td>
+                        <input type="password" id="kata_sandi" name="kata_sandi" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="foto_diri"><strong>Foto Diri</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="foto_diri" name="foto_diri" size="18" accept="image/gif,image/jpeg,image/png" />
+                        <small class="bantuan">Format yang diterima: JPG, PNG, atau GIF.</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="asal_sekolah"><strong>Asal Sekolah</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="asal_sekolah" name="asal_sekolah" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="atas">
+                        <strong>Kegemaran</strong>
+                    </td>
+                    <td>
+                        <!-- Genre musik -->
+                        <p>
+                            <strong class="subjudul">Genre Musik</strong>
+                            <input type="checkbox" id="musik_pop" name="genre_musik" value="musik_pop" />
+                            <label for="musik_pop" class="opsi">Pop</label>
+                            <input type="checkbox" id="musik_rock" name="genre_musik" value="musik_rock" />
+                            <label for="musik_rock" class="opsi">Rock</label>
+                            <input type="checkbox" id="musik_jazz" name="genre_musik" value="musik_jazz" />
+                            <label for="musik_jazz" class="opsi">Jazz</label>
+                        </p>
+                        <!-- Genre film -->
+                        <p>
+                            <strong class="subjudul">Genre Film</strong>
+                            <input type="checkbox" id="film_drama" name="genre_film" value="film_drama" />
+                            <label for="film_drama" class="opsi">Drama</label>
+                            <input type="checkbox" id="film_aksi" name="genre_film" value="film_aksi" />
+                            <label for="film_aksi" class="opsi">Action</label>
+                            <input type="checkbox" id="film_scifi" name="genre_film" value="film_scifi" />
+                            <label for="film_scifi" class="opsi">Sci-Fi</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="atas">
+                        <label for="ringkasan_diri"><strong>Ringkasan Diri</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="ringkasan_diri" name="ringkasan_diri" rows="10" cols="23"></textarea>
+                    </td>
+                </tr>
+
+                <!-- Tombol kirim; colspan="2" menggabungkan dua kolom menjadi satu -->
+                <tr class="baris-tombol">
+                    <td colspan="2">
+                        <input type="submit" name="kirim" value="Kirim Data" class="tombol" />
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>
